@@ -11,6 +11,8 @@ export default {
       colors: {
         background: "#f6f8fa",
         foreground: "#ffff",
+        textColor: "#6a707f",
+        elements: "#d5d5d4"
       },
     },
   },
