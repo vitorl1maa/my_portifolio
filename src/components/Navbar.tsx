@@ -1,11 +1,10 @@
-"use client";
-
 import { House, PanelTop, SendHorizontal, User } from "lucide-react";
 import React from "react";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
-    <header className="bg-foreground w-full h-16 rounded-xl shadow-md">
+    <header className="bg-background w-full h-16 rounded-xl shadow-md">
       <nav className="flex justify-between items-center px-8 lg:px-36 h-full">
         <ul className="flex gap-3">
           <li className="menu-buttons">
@@ -19,9 +18,9 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <button className="cta-button font-medium flex items-center justify-center gap-2 hover:bg-black/70">
+        <Button variant="default" className="hover:bg-black/60">
           Contate-me <SendHorizontal size={15} />
-        </button>
+        </Button>
       </nav>
     </header>
   );

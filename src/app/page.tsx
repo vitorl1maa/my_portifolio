@@ -3,14 +3,15 @@ import { Circle, Github, Linkedin } from "lucide-react";
 import Image from "next/image";
 import avatar from "@/images/avatar.jpeg";
 import ProjectsList from "@/components/ProjectsList";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div className="bg-background">
-      <main className="px-20 py-8">
+    <div className="bg-wrapper max-h-f">
+      <main className="px-20 py-8 h-full">
         <Navbar />
 
-        <div className="bg-foreground mt-8 w-full h-full rounded-xl shadow-md ">
+        <div className="bg-background mt-8 w-full h-full rounded-xl shadow-md ">
           <div className="p-8 lg:px-36 lg:py-16">
             <section>
               <div className="flex justify-between">
@@ -34,9 +35,7 @@ export default function Home() {
 
             <section className="w-full mt-20 flex justify-between items-center">
               <div className="w-1/2">
-                <h2 className="text-4xl font-semibold">
-                  Olá meu nome é Vitor!
-                </h2>
+                <h2 className="text-4xl font-bold">Olá meu nome é Vitor!</h2>
 
                 <p className="mt-5 text-textColor">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
@@ -46,12 +45,12 @@ export default function Home() {
                 </p>
 
                 <div className="flex gap-3 mt-8">
-                  <button className="w-32 h-12 flex justify-center items-center gap-2 bg-black text-white rounded-md hover:bg-black/70">
+                  <Button className="hover:bg-black/60" variant="default">
                     LikedIn <Linkedin size={16} />
-                  </button>
-                  <button className="w-32 h-12 flex justify-center items-center gap-2 bg-black text-white rounded-md hover:bg-black/70">
+                  </Button>
+                  <Button className="hover:bg-black/60" variant="default">
                     GitHub <Github size={16} />
-                  </button>
+                  </Button>
                 </div>
               </div>
 
