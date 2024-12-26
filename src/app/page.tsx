@@ -17,8 +17,13 @@ export default function Home() {
               <div className="flex justify-between">
                 <h1 className="text-xl font-medium flex items-center gap-2">
                   {" "}
-                  <Circle size={8} fill="#d5d5d4" stroke="#d5d5d4" /> Software
-                  Developer
+                  <Circle
+                    size={8}
+                    fill="#d5d5d4"
+                    stroke="#d5d5d4"
+                    className=""
+                  />{" "}
+                  Software Developer
                 </h1>
                 <div className="flex items-center gap-2 justify-center rounded-full bg-[#d8f9e1] text-[#288341] w-32 ">
                   {" "}
@@ -26,7 +31,7 @@ export default function Home() {
                     size={8}
                     fill="#61c486"
                     stroke="#61c486"
-                    className="animate-pulse"
+                    className="animate-pulse "
                   />{" "}
                   Disponível
                 </div>
