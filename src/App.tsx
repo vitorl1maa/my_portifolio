@@ -1,8 +1,16 @@
+import About from "./components/About/About";
+import Banner from "./components/Banner/Banner";
+import Navbar from "./components/Navbar/Navbar";
+import Projects from "./components/Projects/Projects";
+
 function App() {
   return (
-    <>
-      <h1 className="text-3xl">Hello World</h1>
-    </>
+    <main className="w-full h-screen font-roboto container-layout flex flex-col">
+      <Navbar />
+      <Banner />
+      <About />
+      <Projects />
+    </main>
   );
 }
 
