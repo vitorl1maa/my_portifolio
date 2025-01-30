@@ -5,7 +5,8 @@ function Navbar() {
     <header>
       <nav className="flex justify-between">
         <p className="font-extrabold text-2xl">
-          <span className="text-gray-400">Vitor</span> Lima.
+          <span className="text-gray-400">Vitor</span> Lima
+          <span className="text-orange-600">.</span>
         </p>
         <ul className="flex gap-5 font-extrabold text-xl">
           <li>Sobre</li>

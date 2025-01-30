@@ -4,9 +4,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* *{
-  font-family: "Roboto", serif;
-} */
+::-webkit-scrollbar {
+  width: 7px;
+  
+
+}
+
+::-webkit-scrollbar-track {
+  background: trasparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 15px;
+  height: 3%;
+
+}
 
 @layer base {
   :root {
@@ -60,7 +73,17 @@
     --chart-5: 27 87% 67%;
 
     --radius: 0.5rem
-  }
+  ;
+
+    --color-1: 0 100% 63%;
+
+    --color-2: 270 100% 63%;
+
+    --color-3: 210 100% 63%;
+
+    --color-4: 195 100% 63%;
+
+    --color-5: 90 100% 63%}
   .dark {
 
     --background: 240 10% 3.9%;
@@ -110,7 +133,17 @@
     --chart-4: 280 65% 60%;
 
     --chart-5: 340 75% 55%
-  }
+  ;
+
+    --color-1: 0 100% 63%;
+
+    --color-2: 270 100% 63%;
+
+    --color-3: 210 100% 63%;
+
+    --color-4: 195 100% 63%;
+
+    --color-5: 90 100% 63%}
 }
 
 @layer base {

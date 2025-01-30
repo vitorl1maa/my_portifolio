@@ -1,7 +1,8 @@
 import About from "./components/About/About";
+import AppInfo from "./components/AppInfo/AppInfo";
 import Banner from "./components/Banner/Banner";
 import Navbar from "./components/Navbar/Navbar";
-import Projects from "./components/Projects/Projects";
+import SkillsInfo from "./components/SkillsInfo/SkillsInfo";
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       <Navbar />
       <Banner />
       <About />
-      <Projects />
+      <SkillsInfo />
+      <AppInfo />
     </main>
   );
 }
