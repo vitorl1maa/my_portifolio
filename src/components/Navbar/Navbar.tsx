@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -9,9 +9,15 @@ function Navbar() {
           <span className="text-orange-600">.</span>
         </p>
         <ul className="flex gap-5 font-extrabold text-xl">
-          <li>Sobre</li>
-          <li>Projetos</li>
-          <li>Carreira</li>
+          <li className="nav-links">
+            <Link to="#sobre">Sobre</Link>
+          </li>
+          <li className="nav-links">
+            <Link to="#projetos">Projetos</Link>
+          </li>
+          <li className="nav-links">
+            <Link to="#contato">Contato</Link>
+          </li>
         </ul>
       </nav>
     </header>

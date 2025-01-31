@@ -2,6 +2,7 @@ import profileImg from "@/assets/profile.jpg";
 import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 import { NumberTicker } from "../ui/number-ticker";
 import TooltipDefault from "@/shared-components/TooltipDefault/TooltipDefault";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -36,13 +37,27 @@ const About = () => {
             </div>
 
             <div className="flex gap-12">
-              <span className=" text-black flex items-center justify-center gap-3 text-3xl font-semibold rounded-lg mt-8 hover:text-gray-400 cursor-pointer transition-all">
-                LikedIn
-                <LinkedinLogo size={32} weight="fill" />
+              <span className=" nav-links text-black text-3xl font-semibold rounded-lg mt-8  cursor-pointer transition-all">
+                <Link
+                  to="https://www.linkedin.com/in/vitor-limaa/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-3"
+                >
+                  LikedIn
+                  <LinkedinLogo size={32} weight="fill" />
+                </Link>
               </span>
-              <span className=" text-black flex items-center justify-center gap-3 text-3xl font-semibold rounded-lg mt-8 hover:text-gray-400 cursor-pointer transition-all">
-                GitHub
-                <GithubLogo size={32} weight="fill" />
+              <span className=" nav-links text-black text-3xl font-semibold rounded-lg mt-8  cursor-pointer transition-all">
+                <Link
+                  to="https://github.com/vitorl1maa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-3"
+                >
+                  GitHub
+                  <GithubLogo size={32} weight="fill" />
+                </Link>
               </span>
             </div>
           </div>
