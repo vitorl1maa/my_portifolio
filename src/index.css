@@ -22,7 +22,7 @@
 
 }
 
-.nav-links a {
+.nav-links a, span {
   position: relative;
   padding-bottom: 10px;
 }
@@ -182,4 +182,23 @@
     .ShimmerButton:hover .icon {
       @apply text-orange-500
     }
+
+  .footer-social-medias{
+    @apply hover:text-orange-600 cursor-pointer transition-all 
+  }
+
+  .scroll-to-top {
+    background-color: #000 !important;
+    border-radius: 100% !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .top-btn svg {
+    display: inline;
+    background-color: transparent;
+    border-radius: 100%;
+  }
+  
+  
 }

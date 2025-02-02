@@ -1,6 +1,11 @@
-import { Link } from "react-router-dom";
-
 function Navbar() {
+  const handlerClick = (elementId: string) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <header>
       <nav className="flex justify-between">
@@ -9,14 +14,14 @@ function Navbar() {
           <span className="text-orange-600">.</span>
         </p>
         <ul className="flex gap-5 font-extrabold text-xl">
-          <li className="nav-links">
-            <Link to="#sobre">Sobre</Link>
+          <li className="nav-links cursor-pointer">
+            <a onClick={() => handlerClick("sobre")}>Sobre</a>
           </li>
-          <li className="nav-links">
-            <Link to="#projetos">Projetos</Link>
+          <li className="nav-links cursor-pointer">
+            <a onClick={() => handlerClick("projetos")}>Projetos</a>
           </li>
-          <li className="nav-links">
-            <Link to="#contato">Contato</Link>
+          <li className="nav-links cursor-pointer">
+            <a onClick={() => handlerClick("contact")}>Contato</a>
           </li>
         </ul>
       </nav>

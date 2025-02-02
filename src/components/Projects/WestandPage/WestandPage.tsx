@@ -1,12 +1,13 @@
 import weStandPage from "@/assets/we_stand_lp.png";
 import logoWestand from "@/assets/logo-colorido-png.png";
 import { ArrowRight } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
 
 function WestandPage() {
   return (
     <section className="w-full h-screen flex items-center justify-center flex-col  mt-[20%] ">
       <div className="flex gap-32">
-        <div className="w-[60%] bg-gray-100 p-5 rounded-3xl border">
+        <div className="w-[60%] bg-gray-100 p-5 rounded-3xl border shadow-md">
           <img
             src={weStandPage}
             alt="Apresentação westand"
@@ -27,9 +28,15 @@ function WestandPage() {
             posicionamento nos buscadores.
           </p>
 
-          <div className="mt-20 hover:text-orange-600">
-            <ArrowRight size={50} />
-          </div>
+          <Link
+            to="https://westand.com.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="mt-20 hover:text-orange-600">
+              <ArrowRight size={50} />
+            </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -2,21 +2,22 @@ import weStandImage from "@/assets/we_stand.png";
 import logoWestand from "@/assets/logo-colorido-png.png";
 import { ArrowRight } from "@phosphor-icons/react";
 import { WordRotate } from "@/components/ui/word-rotate";
+import { Link } from "react-router-dom";
 
 function Westand() {
   return (
     <section className="w-full h-screen flex items-center justify-center flex-col  mt-[20%] ">
-      <h1 className="text-8xl font-extrabold mb-44 text-center ">
-        O Que Já Construí ?{" "}
+      <h1 className="text-5xl font-extrabold mb-44 text-center ">
+        Alguns dos projetos nos quais já atuei
         <WordRotate
-          className="text-8xl font-bold text-gray-400"
+          className="text-5xl font-bold text-gray-400"
           words={["Sistemas", "Sites", "Apps"]}
         />
       </h1>
 
       <div className="flex flex-col gap-20">
         <div className="flex gap-32">
-          <div className="w-[60%] bg-gray-100 p-5 rounded-3xl border">
+          <div className="w-[60%] bg-gray-100 p-5 rounded-3xl border shadow-md">
             <img src={weStandImage} alt="Apresentação westand" className="" />
           </div>
 
@@ -35,9 +36,15 @@ function Westand() {
               <span className="text-orange-600"> Styled-Components</span>.
             </p>
 
-            <div className="mt-20 hover:text-orange-600">
-              <ArrowRight size={50} />
-            </div>
+            <Link
+              to="https://app.westand.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="mt-20 hover:text-orange-600">
+                <ArrowRight size={50} />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

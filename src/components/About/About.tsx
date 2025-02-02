@@ -7,8 +7,11 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <section className="w-full h-screen flex flex-col  justify-center mt-[30%]">
-      <div className="flex flex-col justify-center items-center">
-        <h1 className="text-5xl font-extrabold mb-20 w-[55%] text-center ">
+      <div
+        className="flex flex-col justify-center items-center mt-20"
+        id="sobre"
+      >
+        <h1 className="text-5xl font-extrabold mb-20 w-[55%] text-center mt-20 ">
           Desenvolvo aplicações <span className="text-gray-400">web</span> e
           <span className="text-gray-400"> mobile </span> rápidas, intuitivas e
           fáceis de usar

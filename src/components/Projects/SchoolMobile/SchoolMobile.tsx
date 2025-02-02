@@ -1,6 +1,7 @@
 import schoolMobileImage from "@/assets/img_3screens.png";
 import logoSchoolMobile from "@/assets/logo-school.png";
 import { ArrowLeft } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
 
 function SchoolMobile() {
   return (
@@ -23,9 +24,15 @@ function SchoolMobile() {
             smartphone.
           </p>
 
-          <div className="mt-20 hover:text-orange-600">
-            <ArrowLeft size={50} />
-          </div>
+          <Link
+            to="https://play.google.com/store/apps/details?id=br.com.schoolmobile.inspell&hl=en_US"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="mt-20 hover:text-orange-600">
+              <ArrowLeft size={50} />
+            </button>
+          </Link>
         </div>
 
         <div className="w-[60%] flex items-center justify-center pt-20 relative">
