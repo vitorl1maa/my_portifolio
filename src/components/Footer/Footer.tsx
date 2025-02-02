@@ -10,7 +10,7 @@ import ScrollToTop from "react-scroll-to-top";
 
 function Footer() {
   return (
-    <footer className="flex flex-col items-center justify-center mt-[5%] pb-20 ">
+    <footer className="flex flex-col items-center justify-center pb-20 ">
       <ScrollToTop
         smooth
         component={<CaretUp size={32} color="#fff" />}

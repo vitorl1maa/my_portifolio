@@ -12,7 +12,7 @@ import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <main className="w-full h-screen font-roboto container-layout flex flex-col">
+    <main className="max-w-full h-screen font-roboto container-layout flex flex-col">
       <BrowserRouter>
         <Navbar />
         <Banner />

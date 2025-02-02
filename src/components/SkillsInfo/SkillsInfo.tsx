@@ -2,6 +2,7 @@ import SaasMockup from "@/assets/sass-mockup.png";
 import Button from "@/shared-components/Button/Button";
 import { SparklesText } from "../ui/sparkles-text";
 import { AuroraText } from "../ui/aurora-text";
+import { Slide } from "react-awesome-reveal";
 
 function SkillsInfo() {
   return (
@@ -33,11 +34,13 @@ function SkillsInfo() {
         </div>
 
         <div className="w-1/2 bg-gray-100 p-5 rounded-3xl border">
-          <img
-            src={SaasMockup}
-            alt="Imagem ilustrativa de um Saas"
-            className="w-full shadow-md rounded-xl"
-          />
+          <Slide className="w-full" direction="up">
+            <img
+              src={SaasMockup}
+              alt="Imagem ilustrativa de um Saas"
+              className="w-full shadow-md rounded-xl"
+            />
+          </Slide>
         </div>
       </div>
     </section>
