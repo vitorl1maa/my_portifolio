@@ -4,7 +4,6 @@ import {
   InstagramLogo,
   LinkedinLogo,
 } from "@phosphor-icons/react";
-import React from "react";
 import { Link } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
 
