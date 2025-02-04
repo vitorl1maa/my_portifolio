@@ -7,7 +7,7 @@
 
 ::-webkit-scrollbar {
   width: 7px;
-  
+
 
 }
 
@@ -22,7 +22,8 @@
 
 }
 
-.nav-links a, span {
+.nav-links a,
+span {
   position: relative;
   padding-bottom: 10px;
 }
@@ -41,6 +42,8 @@
 .nav-links a:hover::after {
   width: 80%;
 }
+
+
 
 @layer base {
   :root {
@@ -93,8 +96,7 @@
 
     --chart-5: 27 87% 67%;
 
-    --radius: 0.5rem
-  ;
+    --radius: 0.5rem;
 
     --color-1: 0 100% 63%;
 
@@ -104,7 +106,9 @@
 
     --color-4: 195 100% 63%;
 
-    --color-5: 90 100% 63%}
+    --color-5: 90 100% 63%
+  }
+
   .dark {
 
     --background: 240 10% 3.9%;
@@ -153,8 +157,7 @@
 
     --chart-4: 280 65% 60%;
 
-    --chart-5: 340 75% 55%
-  ;
+    --chart-5: 340 75% 55%;
 
     --color-1: 0 100% 63%;
 
@@ -164,27 +167,33 @@
 
     --color-4: 195 100% 63%;
 
-    --color-5: 90 100% 63%}
+    --color-5: 90 100% 63%
+  }
 }
 
 @layer base {
   * {
     @apply border-border;
   }
+
+  .menu-mobile {
+    @apply flex flex-col lg:flex-row gap-3 mt-16 lg:mt-0 lg:gap-5 font-extrabold lg:text-xl absolute left-0 w-full lg:w-auto lg:relative shadow-md lg:shadow-none pl-5 lg:pl-0 opacity-0 lg:opacity-100 top-[-300px] z-30 transition-all ease-in duration-200
+  }
+
   body {
     @apply bg-background text-foreground;
   }
 
   .container-layout {
-    @apply py-16 px-32
+    @apply px-5 py-12 md:py-16 md:px-32
   }
 
-    .ShimmerButton:hover .icon {
-      @apply text-orange-500
-    }
+  .ShimmerButton:hover .icon {
+    @apply text-orange-500
+  }
 
-  .footer-social-medias{
-    @apply hover:text-orange-600 cursor-pointer transition-all 
+  .footer-social-medias {
+    @apply hover:text-orange-600 cursor-pointer transition-all
   }
 
   .scroll-to-top {
@@ -199,6 +208,6 @@
     background-color: transparent;
     border-radius: 100%;
   }
-  
-  
+
+
 }

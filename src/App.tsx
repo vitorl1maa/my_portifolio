@@ -12,18 +12,18 @@ import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <main className="max-w-full h-screen font-roboto container-layout flex flex-col">
+    <main className="max-w-full h-auto lg:h-screen font-roboto container-layout flex flex-col">
       <BrowserRouter>
         <Navbar />
         <Banner />
         <About />
-        <SkillsInfo />
-        <AppInfo />
-        <Westand />
-        <SchoolMobile />
-        <WestandPage />
-        <Contact />
-        <Footer />
+        {/* <SkillsInfo /> */}
+        {/* <AppInfo /> */}
+        {/* <Westand /> */}
+        {/* <SchoolMobile /> */}
+        {/* <WestandPage /> */}
+        {/* <Contact /> */}
+        {/* <Footer /> */}
       </BrowserRouter>
     </main>
   );

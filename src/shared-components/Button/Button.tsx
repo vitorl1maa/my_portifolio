@@ -9,12 +9,12 @@ const Button = () => {
     <ShimmerButton
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="bg-black text-white flex items-center justify-center gap-3 w-56 h-16 text-2xl font-semibold rounded-lg mt-8"
+      className="bg-black text-white flex items-center justify-center gap-3 h-12 md:w-56 md:h-16 md:text-2xl font-semibold rounded-lg mt-8"
     >
-      <span className="flex items-center gap-3">
+      <span className="flex items-center gap-3 mt-2">
         Fale comigo
         <PaperPlaneTilt
-          size={32}
+          className="text-xl md:text-3xl"
           weight="fill"
           style={{
             color: hover ? "#ea580c" : "inherit",
