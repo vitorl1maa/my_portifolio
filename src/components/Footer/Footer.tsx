@@ -10,13 +10,13 @@ import ScrollToTop from "react-scroll-to-top";
 
 function Footer() {
   return (
-    <footer className="flex flex-col items-center justify-center pb-20 ">
+    <footer className="flex flex-col items-center justify-center lg:pb-20 mt-20 ">
       <ScrollToTop
         smooth
         component={<CaretUp size={32} color="#fff" />}
-        className="top-btn scroll-to-top"
+        className="top-btn scroll-to-top z-50"
       />
-      <strong>© Vitor Lima</strong>
+      <strong className="text-sm">© Vitor Lima</strong>
 
       <ul className="flex gap-4 mt-5">
         <Link
@@ -25,7 +25,7 @@ function Footer() {
           rel="noopener noreferrer"
         >
           <li className="footer-social-medias">
-            <LinkedinLogo size={32} weight="fill" className="" />
+            <LinkedinLogo weight="fill" className="" />
           </li>
         </Link>
         <Link
@@ -34,7 +34,7 @@ function Footer() {
           rel="noopener noreferrer"
         >
           <li className="footer-social-medias">
-            <GithubLogo size={32} weight="fill" />
+            <GithubLogo weight="fill" />
           </li>
         </Link>
         <Link
@@ -43,7 +43,7 @@ function Footer() {
           rel="noopener noreferrer"
         >
           <li className="footer-social-medias">
-            <InstagramLogo size={32} weight="fill" />
+            <InstagramLogo weight="fill" />
           </li>
         </Link>
       </ul>

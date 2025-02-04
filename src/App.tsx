@@ -17,13 +17,13 @@ function App() {
         <Navbar />
         <Banner />
         <About />
-        {/* <SkillsInfo /> */}
-        {/* <AppInfo /> */}
-        {/* <Westand /> */}
-        {/* <SchoolMobile /> */}
-        {/* <WestandPage /> */}
-        {/* <Contact /> */}
-        {/* <Footer /> */}
+        <SkillsInfo />
+        <AppInfo />
+        <Westand />
+        <SchoolMobile />
+        <WestandPage />
+        <Contact />
+        <Footer />
       </BrowserRouter>
     </main>
   );

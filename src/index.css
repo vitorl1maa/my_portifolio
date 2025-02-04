@@ -177,7 +177,7 @@ span {
   }
 
   .menu-mobile {
-    @apply flex flex-col lg:flex-row gap-3 mt-16 lg:mt-0 lg:gap-5 font-extrabold lg:text-xl absolute left-0 w-full lg:w-auto lg:relative shadow-md lg:shadow-none pl-5 lg:pl-0 opacity-0 lg:opacity-100 top-[-300px] z-30 transition-all ease-in duration-200
+    @apply flex flex-col lg:flex-row gap-3 mt-16 lg:mt-0 lg:gap-5 font-extrabold lg:text-xl absolute left-0 w-full lg:w-auto lg:relative shadow-md lg:shadow-none pl-5 lg:pl-0 opacity-0 lg:opacity-0 top-[-300px] z-30 transition-all ease-in duration-200
   }
 
   body {
@@ -185,7 +185,7 @@ span {
   }
 
   .container-layout {
-    @apply px-5 py-12 md:py-16 md:px-32
+    @apply px-5 py-8 md:py-16 md:px-32
   }
 
   .ShimmerButton:hover .icon {
@@ -193,7 +193,7 @@ span {
   }
 
   .footer-social-medias {
-    @apply hover:text-orange-600 cursor-pointer transition-all
+    @apply hover:text-orange-600 cursor-pointer transition-all text-xl
   }
 
   .scroll-to-top {

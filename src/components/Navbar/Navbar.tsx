@@ -37,8 +37,8 @@ function Navbar() {
           className={`menu-mobile ${
             openMenu
               ? "opacity-100 top-12 z-10 h-[150px] bg-white"
-              : "opacity-0 top-0 z-30"
-          }`}
+              : "opacity-0 top-[-300px] z-[-1]"
+          } lg:opacity-100 lg:relative lg:top-0 lg:z-auto lg:flex`}
         >
           <li className="nav-links cursor-pointer">
             <a onClick={() => handlerClick("sobre")}>Sobre</a>

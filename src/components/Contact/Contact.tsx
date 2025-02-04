@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import avatarImage from "@/assets/avatar.jpeg";
 import { AnimatedGridPattern } from "../ui/animated-grid-pattern";
 import { cn } from "@/lib/utils";
@@ -19,18 +19,18 @@ function Contact() {
   };
 
   return (
-    <Zoom>
+    <Zoom delay={150} duration={800}>
       <section
-        className="w-full h-screen flex items-center justify-center mt-[5%] "
+        className="w-full  lg:h-screen flex items-center justify-center mt-[5%] "
         id="contact"
       >
         <div className="relative flex h-[800px] w-full items-center justify-center overflow-hidden  bg-background ">
           <div className="w-full flex flex-col items-center mb-24">
-            <h1 className="text-5xl font-extrabold mb-12 w-[55%] text-center mt-20 ">
+            <h1 className="text-4xl lg:text-5xl font-extrabold mb-12 lg:w-[55%] text-center mt-20 ">
               Me mande um <span className="text-gray-400"> e-mail</span>
             </h1>
 
-            <div className="flex gap-8 bg-gray-100 px-5 py-2 rounded-3xl border shadow-md hover:border-2 hover:border-orange-600 z-30">
+            <div className="flex w-full lg:w-auto gap-3 lg:gap-8 bg-gray-100 px-5 py-2 rounded-3xl border shadow-md hover:border-2 hover:border-orange-600 z-30">
               <img
                 src={avatarImage}
                 alt="avatar image"
@@ -38,7 +38,7 @@ function Contact() {
               />
 
               <button
-                className="text-3xl font-normal"
+                className="lg:text-3xl font-normal"
                 onClick={copyToClipboard}
               >
                 {copied ? "E-mail copiado!" : "vitornascimento923@gmail.com"}
