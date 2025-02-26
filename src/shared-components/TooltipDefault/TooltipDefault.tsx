@@ -20,7 +20,7 @@ const TooltipDefault: React.FC<TooltipDefaultProps> = ({
   tooltip,
 }) => {
   return (
-    <TooltipProvider>
+    <TooltipProvider delayDuration={0}>
       <Tooltip>
         <TooltipTrigger>
           <Icon icon={icon} width={width} height={height} />

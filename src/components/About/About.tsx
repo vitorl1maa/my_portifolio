@@ -113,10 +113,10 @@ const About = () => {
               tooltip="TypeScript"
             />
             <TooltipDefault
-              icon="logos:nodejs"
-              width={80}
+              icon="devicon:csharp"
+              width={70}
               height={80}
-              tooltip="Node.js"
+              tooltip="C#"
             />
             <TooltipDefault
               icon="devicon:react"
@@ -129,6 +129,12 @@ const About = () => {
               width={80}
               height={80}
               tooltip="React Native"
+            />
+            <TooltipDefault
+              icon="logos:dotnet"
+              width={70}
+              height={80}
+              tooltip=".NET"
             />
             <TooltipDefault
               icon="devicon:angular"
