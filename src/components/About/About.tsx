@@ -14,7 +14,7 @@ const About = () => {
             <h1 className="text-xl lg:text-5xl font-extrabold mb-16 lg:mb-24 lg:w-[55%] text-center mt-16 lg:mt-20 ">
               Desenvolvo aplicações <span className="text-gray-400">web</span> e
               <span className="text-gray-400"> mobile </span> rápidas,
-              intuitivas e fáceis de usar
+              intuitivas e escaláveis
             </h1>
 
             <div className="w-full lg:w-[900px]">
@@ -40,7 +40,7 @@ const About = () => {
                 </p>
                 <p className="font-extrabold text-5xl lg:text-7xl">
                   <NumberTicker
-                    value={7}
+                    value={8}
                     className="font-extrabold text-5xl lg:text-7xl"
                   />{" "}
                   anos
@@ -82,7 +82,7 @@ const About = () => {
 
             <div className="lg:w-[50%]">
               <p className=" text-base lg:text-xl text-black/80 leading-8 lg:mt-12 text-justify lg:text-left">
-                Atuando há mais de 7 anos na área de TI, nos últimos 3 anos me
+                Atuando há mais de 8 anos na área de TI, nos últimos 4 anos me
                 especializei como desenvolvedor, com foco em desenvolvimento web
                 e mobile. Tenho experiência em diversos tipos e níveis de
                 projetos, ampliando minhas habilidades em diferentes tecnologias
@@ -113,10 +113,10 @@ const About = () => {
               tooltip="TypeScript"
             />
             <TooltipDefault
-              icon="devicon:csharp"
-              width={70}
+              icon="logos:nodejs"
+              width={80}
               height={80}
-              tooltip="C#"
+              tooltip="Node.js"
             />
             <TooltipDefault
               icon="devicon:react"
@@ -129,12 +129,6 @@ const About = () => {
               width={80}
               height={80}
               tooltip="React Native"
-            />
-            <TooltipDefault
-              icon="logos:dotnet"
-              width={70}
-              height={80}
-              tooltip=".NET"
             />
             <TooltipDefault
               icon="devicon:angular"
@@ -155,10 +149,10 @@ const About = () => {
               tooltip="PostgreSQL"
             />
             <TooltipDefault
-              icon="logos:mysql"
-              width={60}
-              height={60}
-              tooltip="MySQL"
+              icon="devicon:zustand"
+              width={70}
+              height={80}
+              tooltip="Zustand"
             />
             <TooltipDefault
               icon="devicon:figma"

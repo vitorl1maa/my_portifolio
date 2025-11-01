@@ -13,10 +13,10 @@ function Westand() {
     >
       <Zoom delay={150} duration={800}>
         <h1 className="text-3xl lg:text-5xl font-extrabold mb-12 pt-5 lg:mb-32 text-center ">
-          Alguns dos projetos nos quais já atuei
+         Alguns dos projetos que fizeram e ainda <br/> fazem parte da minha jornada
           <WordRotate
             className="text-3xl lg:text-5xl font-bold text-gray-400"
-            words={["Sistemas", "Sites", "Apps"]}
+            words={["SaaS", "Sites", "Apps"]}
           />
         </h1>
       </Zoom>

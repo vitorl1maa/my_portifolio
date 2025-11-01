@@ -5,6 +5,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import SchoolMobile from "./components/Projects/SchoolMobile/SchoolMobile";
+import Teddy from "./components/Projects/Teddy/Teddy";
 import Westand from "./components/Projects/Westand/Westand";
 import WestandPage from "./components/Projects/WestandPage/WestandPage";
 import SkillsInfo from "./components/SkillsInfo/SkillsInfo";
@@ -22,6 +23,7 @@ function App() {
         <Westand />
         <SchoolMobile />
         <WestandPage />
+        <Teddy />
         <Contact />
         <Footer />
       </BrowserRouter>
